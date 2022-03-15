@@ -15,9 +15,11 @@
                 margin: 0;
                 padding: 0;
                 line-height: 100%;
-                background-color: #e2f4ff;
+                background-color: #ffffff;
             }
-    
+            h1,h2,h3 {
+                margin: 0;
+            }
             [style*="Roboto"] {
                 font-family: 'Roboto', arial, sans-serif !important;
             }
@@ -47,10 +49,13 @@
                     width: 900px !important;
                 }
                 .table-1040 {
-                    width: 804px !important;
+                    width: 800px !important;
                 }
                 .table-905 {
                     width: 95% !important;
+                }
+                .table-warning {
+                    width: 80% !important;
                 }
                 .logo {
                     padding-top: 100px !important;
@@ -76,7 +81,6 @@
                 .item__text {
                     padding-top: 35px !important;
                     padding-left: 60px !important;
-                    /* padding-right: 40px !important; */
                 }
                 .item__img img{
                     width: 650px !important;
@@ -84,11 +88,8 @@
                 }
             }
             @media (max-width: 930px) {
-                .table-1160 {
-                    width: 700px !important;
-                }
                 .table-1040 {
-                    width: 626px !important;
+                    width: 710px !important;
                 }
                 .table-905 {
                     width: 95% !important;
@@ -119,8 +120,8 @@
                     padding-left: 50px !important;
                     padding-right: 30px !important;
                 }
-                .item--title p,
-                .item--title {
+                .title--blue p,
+                .title--blue {
                     font-size: 32px !important;
                     line-height: 43px !important;
                 }
@@ -140,7 +141,7 @@
                     padding-top: 45px !important;
                 }
                 .item__img img {
-                    width: 95% !important;
+                    width: 80% !important;
                 }
                 .item--text {
                     font-size: 20px !important;
@@ -150,22 +151,52 @@
                     display: block;
                     width: 40px !important;
                 }
+                .blue-table__text {
+                    font-size: 28px !important;
+                    line-height: 34px !important;
+                }
+                .button {
+                    width: 400px !important;
+                    padding-top: 30px !important;
+                    padding-bottom: 30px !important;
+                    font-size: 28px !important;
+                }
             }
-            @media (max-width: 730px) {
+            @media (max-width: 900px) {
                 .table-1160 {
-                    width: 600px !important;
+                    width: 800px !important
+                }
+                .blue__table {
+                    padding-top: 50px !important;
+                    padding-bottom: 60px !important;
+                }
+                .link  {
+                    width: 400px !important;
+                    font-size: 28px !important;
+                    line-height: 36px;
+                }
+            }
+            @media (max-width: 810px) {
+                .table-1160 {
+                    width: 700px !important;
                 }
                 .table-1040 {
-                    width: 536px !important;
+                    width: 610px !important;
+                }
+                .unsubscribe {
+                    font-size: 24px !important;
+                    line-height: 28px !important;
+                }
+            }
+            @media (max-width: 700px) {
+                .table-1160 {
+                    width: 100% !important;
+                }
+                .table-1040 {
+                    width: 93% !important;
                 }
             }
             @media (max-width: 630px) {
-                .table-1160 {
-                    width: 500px !important;
-                }
-                .table-1040 {
-                    width: 446px !important;
-                }
                 .logo {
                     padding-top: 45px !important;
                     padding-left: 15px !important;
@@ -224,227 +255,250 @@
                     display: block;
                     width: 30px !important;
                 }
-            }
-            @media (max-width: 530px) {
-                .table-1160 {
-                    width: 100% !important;
+                .link {
+                    padding-top: 25px !important;
+                    padding-bottom: 25px !important;
+                    width: 340px !important;
+                    font-size: 22px !important;
+                    line-height: 27px !important;
                 }
-                .table-1040 {
-                    width: 95% !important;
-                }  
+                .unsubscribe {
+                    font-size: 18px !important;
+                    line-height: 23px !important;
+                }
+            }
+            @media (max-width: 600px) {
+                .blue-table__text {
+                    font-size: 21px !important;
+                    line-height: 24px !important;
+                }
+                .button {
+                    width: 390px !important;
+                    padding-top: 25px !important;
+                    padding-bottom: 25px !important;
+                    font-size: 21px !important;
+                }
+                .unsubscribe {
+                    font-size: 12px !important;
+                }
+            }
+            @media (max-width: 400px) {
+                .blue-table__text {
+                    font-size: 18px !important;
+                    line-height: 23px !important;
+                }
+                .button {
+                    width: 250px !important;
+                    padding-top: 20px !important;
+                    padding-bottom: 20px !important;
+                    font-size: 18px !important;
+                    line-height: 23px !important;
+                }
             }
         </style>
     </head>
-  <table width="100%" align="center" border="1" cellpadding="0" cellspacing="0" style="margin:0; padding:0;background-color:#e2f4ff;">
-    <tr>
-        <td align="center">
-            <table class="table-1160" align="center" width="1160" min-width="320" border="1" cellpadding="0" cellspacing="0" style="margin:0; padding:0;background-color:#e2f4ff;background:url('img/intro-img.png');background-repeat: no-repeat;background-size: contain;">
-                <tr>
-                    <td>
-                        <table class="table-1040" width="1040" align="center" border="1">
-                            <tbody>
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0;background-color:#ffffff;">
+        <tr>
+            <td align="center">
+                <table class="table-1160" align="center" width="1160" min-width="320" border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:0;background:url('https://littldude.github.io/email-test/img/intro-img.png'),#e2f4ff;background-repeat: no-repeat;background-size: contain;">
+                    <tr>
+                        <td>
+                            <table class="table-1040" width="1040" align="center" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="logo" style="padding-top: 104px;padding-left: 40px;">
+                                            <a href="#">
+                                                <img src="https://littldude.github.io/email-test/img/logo.png" alt="iq option" border="0" style="display: block; width: 300px;height: 64px;"/>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="title" style="padding-top: 106px;padding-left: 40px;">
+                                            <h1 style="color: #ff0940;font-size: 80px;line-height: 87px;font-family: Arial, Roboto, sans-serif;"><b>3 Easy Steps</b><br /><span style="color: #003dd8;font-size: 67px;line-height: 87px;">to Improve your<br />Chance of Success</span>
+                                            </h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="subtitle" style="padding-top: 71px;padding-left: 40px;">
+                                            <p style="color: #3c3e44;  font-size:36px;font-family: Arial, Roboto, sans-serif;font-weight: 500;">These steps are simple, effective and 100% free. </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="58"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="table-1040" width="1040" align="center" border="0" cellpadding="0" cellspacing="0" style=" background-color: #ffffff; border-radius: 10px;">
+                                <tbody>
+                                    <tr>
+                                        <td class="item--title title--blue" style="padding-top: 76px;padding-left: 88px;">
+                                            <p style="color:#003dd8;font-size: 44px;line-height: 51px;font-family: Arial, Roboto, sans-serif;"><b>1. Play around with the Price Chart</b></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line" style="padding-top: 26px;padding-left: 84px;">
+                                        <div style="width: 149px;height: 5px;background-color: #003dd8;"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item__text" style="padding-top: 37px;padding-right: 105px;padding-left: 84px;">
+                                            <p style="color: #3c3e44; font-size:32px;line-height: 46px; font-family: Arial, Roboto, sans-serif;">Did you know you can adjust the price chart to your personal preference and trading goals? So simple, yet so <b>useful for making more accurate predictions.</b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item__img" align="center" style="padding-top: 69px;">
+                                            <img style="width: 762px;height: 427px;" src="https://littldude.github.io/email-test/img/img.png" alt="Explore the available trading instruments">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="73"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <h3 class="title--blue" style="color:#003dd8;font-size: 44px;line-height: 51px;font-family: Arial, Roboto, sans-serif;">You Can:</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table class="table-905" width="905" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding-top: 58px;" align="center">
+                                                        <img src="https://littldude.github.io/email-test/img/swipe-img.png" alt="">
+                                                    </td>
+                                                    <td style="padding-top: 58px;"  align="center">
+                                                        <img src="https://littldude.github.io/email-test/img/slide-img.png" alt="">
+                                                    </td>
+                                                    <td style="padding-top: 58px;"  align="center">
+                                                        <img src="https://littldude.github.io/email-test/img/tap-img.png" alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
+                                                        <p><b>Hold and drag</b><br />the chart to review<br />earlier price dynamic. 
+                                                        </p>
+                                                    </td>
+                                                    <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
+                                                        <p><b>Scale the chart</b> by<br />changing the display<br />period between 30<br />days and 30 minutes.  
+                                                        </p>
+                                                    </td>
+                                                    <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
+                                                        <p><b>Choose the type of<br />chart</b> you want to use.<br />Do you prefer Lines,<br />Candles or Bars? 
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="87"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="58"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" width="100%" class="table-1160" cellpadding="0" cellspacing="0"> 
                                 <tr>
-                                    <td class="logo" style="padding-top: 104px;padding-left: 40px;">
-                                        <a href="#">
-                                            <img src="img/logo.png" alt="iq option" border="0" style="display: block; width: 300px;height: 64px;"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="title" style="padding-top: 106px;padding-left: 40px;">
-                                        <h1 style="color: #ff0940;font-size: 80px;line-height: 87px;font-family: Arial, Roboto, sans-serif;"><b>3 Easy Steps</b><br /><span style="color: #003dd8;font-size: 67px;line-height: 87px;">to Improve your<br />Chance of Success</span>
-                                        </h1>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="subtitle" style="padding-top: 71px;padding-left: 40px;">
-                                        <p style="color: #3c3e44;  font-size:36px;font-family: Arial, Roboto, sans-serif;font-weight: 500;">These steps are simple, effective and 100% free. </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="58"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table class="table-1040" width="1040" align="center" border="0" cellpadding="0" cellspacing="0" style=" background-color: #ffffff; border-radius: 10px;">
-                            <tbody>
-                                <tr>
-                                    <td class="item--title" style="padding-top: 76px;padding-left: 88px;">
-                                        <p style="color:#003dd8;font-size: 44px;line-height: 51px;font-family: Arial, Roboto, sans-serif;"><b>1. Play around with the Price Chart</b></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="line" style="padding-top: 26px;padding-left: 84px;">
-                                       <div style="width: 149px;height: 5px;background-color: #003dd8;"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="item__text" style="padding-top: 37px;padding-right: 105px;padding-left: 84px;">
-                                        <p style="color: #3c3e44; font-size:32px;line-height: 46px; font-family: Arial, Roboto, sans-serif;">Did you know you can adjust the price chart to your personal preference and trading goals? So simple, yet so <b>useful for making more accurate predictions.</b>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="item__img" align="center" style="padding-top: 69px;">
-                                        <img style="width: 762px;height: 427px;" src="img/img.png" alt="Explore the available trading instruments">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="73"></td>
-                                </tr>
-                                <tr>
-                                    <td align="center">
-                                        <h3 class="item--title" style="color:#003dd8;font-size: 44px;line-height: 51px;font-family: Arial, Roboto, sans-serif;">You Can:</h3>
+                                    <td>
+                                        <table align="center" border="0" width="1040" class="table-1040" cellpadding="0" cellspacing="0" style="background: #ffffff;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                                            <tr>
+                                                <td style="padding-top: 62px;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="img/banner-top.png" alt="">
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <!-- <table width="100%" align="center" border="1" cellpadding="0" cellspacing="0">
+                                        <table align="center" border="0" width="1160" class="table-1160" cellpadding="0" cellspacing="0" style="background: #003dd8;">
                                             <tr>
-                                                <td valign="center" align="center">
-                                                    <img src="img/slide-img.png" alt="">
-                                                    <p style="text-align: left;padding-top: 32px;padding-right:56px;padding-left: 71px;">Hold and dragthe chart to reviewearlier price dynamic. 
-                                                    </p>
-                                                </td>
-                                                <td valign="center" align="center"> 
-                                                    <img src="img/slide-img.png" alt="">
-                                                    <p style="text-align: left;padding-top: 32px;padding-right:50px;">Scale the chart by changing the display period between 30 days and 30 minutes. 
-
-                                                    </p>
-                                                </td>
-                                                <td valign="top" align="center">
-                                                    <img src="img/tap-img.png" alt="">
-                                                    <p style="text-align: left;padding-top: 32px;padding-right:63px;">Choose the type of chart you want to use. Do you prefer Lines, Candles or Bars?
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </table> -->
-                                        <table class="table-905" width="905" align="center" border="1" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td align="center">
-                                                    <img src="img/swipe-img.png" alt="">
-                                                </td>
-                                                <td align="center">
-                                                    <img src="img/slide-img.png" alt="">
-                                                </td>
-                                                <td align="center">
-                                                    <img src="img/tap-img.png" alt="">
+                                                <td align="center" style="background: #003dd8;">
+                                                    <table class="table-1040" width="1040" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="img/banner-bottom.png" alt="">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
-                                                    <p><b>Hold and drag</b><br />the chart to review<br />earlier price dynamic. 
-                                                    </p>
-                                                </td>
-                                                <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
-                                                    <p><b>Scale the chart</b> by<br />changing the display<br />period between 30<br />days and 30 minutes.  
-                                                    </p>
-                                                </td>
-                                                <td class="item--text" valign="top" style="padding-top: 32px;font-family: Arial, Roboto, sans-serif;font-size: 28px;line-height: 40px;">
-                                                    <p><b>Choose the type of<br />chart</b> you want to use.<br />Do you prefer Lines,<br />Candles or Bars? 
-                                                    </p>
+                                                <td>
+                                                    <table align="center" border="0" width="1040" class="table-1040" cellpadding="0" cellspacing="0" >
+                                                        <tr>
+                                                            <td align="center" style="padding-top: 54px;">
+                                                                <p class="blue-table__text" style="color: #ffffff;font-size: 32px;line-height: 46px;font-family: Arial, Roboto, sans-serif;">Read the <b>“3 easy steps towards success in trading”</b><br />on the IQ Blog to boost your trading skills. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="padding-top: 44px;padding-bottom: 64px;"> 
+                                                                <a class="button" style="display: block;width: 559px;padding-top:31px;padding-bottom: 34px;background-color: #ffffff;color: #003dd8;text-decoration: none;font-size: 36px;border-radius: 10px;font-family: Arial, Roboto, sans-serif;" href="#"><b>Read more</b></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <!-- <table width="100%" align="center" border="1" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>
-                                                    <table width="100%" align="center" border="1" cellpadding="0" cellspacing="0">
-                                                        <tr>
-                                                            <td align="center">
-                                                                <img src="img/slide-img.png" alt="">
-                                                            </td>
-                                                            <td align="center">
-                                                                <img src="img/swipe-img.png" alt="">
-                                                            </td>
-                                                            <td align="center">
-                                                                <img src="img/tap-img.png" alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td valign="top" style="padding-left: 70px;padding-right: 50px;">
-                                                                <p>Hold and drag<br />the chart to review<br />earlier price dynamic. 
-                                                                </p>
-                                                            </td>
-                                                            <td valign="top" style="padding-right: 50px;">
-                                                                <p>Scale the chart by<br />changing the display<br />period between 30<br />days and 30 minutes. 
-                                                                </p>
-                                                            </td>
-                                                            <td valign="top" style="padding-right: 56px;">
-                                                                <p>Choose the type of<br /> chart you want to use.<br /> Do you prefer Lines,<br />Candles or Bars?
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table> -->
-                                        <!-- <table width="905" align="center" border="1">
-                                            <tr>
-                                                <td>
-                                                    <table align="center">
-                                                        <tr>
-                                                            <td>
-                                                                <img style="text-align: center;" src="img/swipe-img.png" alt="">
-                                                                <p style="padding-top: 38px;">Hold and drag<br />the chart to review<br />earlier price dynamic. 
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td>
-                                                    <table align="center">
-                                                        <tr>
-                                                            <td>
-                                                                <img src="img/slide-img.png" alt="">
-                                                                <p style="padding-top: 38px;">Hold and drag<br />the chart to review<br />earlier price dynamic. 
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td>
-                                                    <table align="center">
-                                                        <tr>
-                                                            <td>
-                                                                <img src="img/tap-img.png" alt="">
-                                                                <p style="padding-top: 30px;">Hold and drag<br />the chart to review<br />earlier price dynamic. 
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table> -->
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="87"></td>
+                                    <td>
+                                        <table align="center" border="0" width="1040" class="table-1040" cellpadding="0" cellspacing="0" height="60">
+                                            <tr>
+                                                <td style="background: url('img/blur_img.png'), #ffffff;background-repeat: no-repeat;background-size: 100%;background-position-y: 100%;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
                                 </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="58"></td>
-                </tr>
-                <!-- <tr>
-                    <td>
-                        <a href="#">
-                            <img style="display: block;width: 100%;" src="img/banner-img.png" alt="Read more" />
-                        </a>
-                    </td>
-                </tr> -->
-                <tr>
-                    <td height="58"></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-  </table>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="71"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="table-warning" width="896" align="center" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td  align="center">
+                                        <img src="img/general warning.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 39px;padding-bottom: 200px;">
+                            <table align="center">
+                                <tr>
+                                    <td>
+                                        <a class="unsubscribe" style="text-decoration: none;  font-size: 24px;line-height:28px;font-family: Arial, Roboto, sans-serif;color: #7d848a;padding-right: 16px;border-right: 2px #7d848a solid;" href="#">Privacy and Policy</a>
+                                    </td>
+                                    <td>
+                                        <a class="unsubscribe" style="text-decoration: none;  font-size: 24px;line-height:28px;font-family: Arial, Roboto, sans-serif;color: #7d848a;padding-left: 16px;" href="#">Unsubscribe</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </html>
 
